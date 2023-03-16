@@ -1,85 +1,42 @@
-.Calculatrice {
+.Calculette {
    display: grid;
-   width: 500px;
-   height: 600px;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: 1.5fr 1.25fr repeat(4, 1fr);
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
+   grid-template-areas: "nombres opérations";
+   grid-template-columns: 400px;
+   grid-template-rows: 550px 500px 400px;
+   gap: 5px;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   background: rgb(0,0,0);
+ }
+
+.First {
+   grid-area: Résultat;
+}
+
+.First {
+   display: grid;
+   grid-template-columns: repeat(1, 400px);
+}
+
+.Second {
+   grid-area: AC/DEL;
+}
+
+.Second {
+   display: grid;
+   grid-template-columns: repeat(2, 200px);
+}
+
+.Third {
+   grid-area: Opérations;
 }
    
-   .Calcul { 
-      grid-area: 1 / 1 / 2 / 6; 
-   }
-
-   .AC { 
-      grid-area: 2 / 1 / 3 / 3; 
-   }
-
-   .DEL { 
-      grid-area: 2 / 3 / 3 / 5; 
-   }
-
-   .Un { 
-      grid-area: 3 / 1 / 4 / 2; 
-   }
-
-   .Deux { 
-      grid-area: 3 / 2 / 4 / 3; 
-   }
-
-   .Trois { 
-      grid-area: 3 / 3 / 4 / 4; 
-   }
-
-   .Division { 
-      grid-area: 3 / 4 / 4 / 5; 
-   }
-
-   .Quatre { 
-      grid-area: 4 / 1 / 5 / 2; 
-   }
-
-   .Cinq { 
-      grid-area: 4 / 2 / 5 / 3; 
-   }
-
-   .Six { 
-      grid-area: 4 / 3 / 5 / 4; 
-   }
-
-   .Multiplication { 
-      grid-area: 4 / 4 / 5 / 5; 
-   }
-
-   .Sept { 
-      grid-area: 5 / 1 / 6 / 2; 
-   }
-
-   .Huit { 
-      grid-area: 5 / 2 / 6 / 3; 
-   }
-
-   .Neuf { 
-      grid-area: 5 / 3 / 6 / 4; 
-   }
-
-   .Soustraction { 
-      grid-area: 5 / 4 / 6 / 5; 
-   }
-
-   .Virgule { 
-      grid-area: 6 / 1 / 7 / 2; 
-   }
-
-   .Zéro { 
-      grid-area: 6 / 2 / 7 / 3; 
-   }
-
-   .Egal { 
-      grid-area: 6 / 3 / 7 / 4; 
-   }
-
-   .Addition { 
-      grid-area: 6 / 4 / 7 / 5; 
-   } 
+.Third {
+   display: grid;
+   grid-template-columns: repeat(4, 100px);
+}
+   
+   
